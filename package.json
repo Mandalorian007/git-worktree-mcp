@@ -1,0 +1,52 @@
+{
+  "name": "git-worktree-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for managing git worktrees through AI assistants",
+  "main": "src/index.ts",
+  "type": "module",
+  "bin": {
+    "git-worktree-mcp": "src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mandalorian007/git-worktree-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Mandalorian007/git-worktree-mcp/issues"
+  },
+  "homepage": "https://github.com/Mandalorian007/git-worktree-mcp#readme",
+  "scripts": {
+    "start": "tsx src/index.ts",
+    "dev": "tsx src/index.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "keywords": [
+    "mcp",
+    "git",
+    "worktree",
+    "ai",
+    "assistant",
+    "development"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^0.6.0",
+    "tsx": "^4.16.0",
+    "zod": "^3.23.8",
+    "zod-to-json-schema": "^3.24.6"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "typescript": "^5.5.0",
+    "vitest": "^3.2.4"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "files": [
+    "src/**/*",
+    "README.md"
+  ]
+}
