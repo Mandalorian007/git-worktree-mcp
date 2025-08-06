@@ -2,8 +2,8 @@
 node_modules/
 .pnpm-store/
 
-# Build outputs
-dist/
+# Build outputs (keep dist/ for npx distribution)
+# dist/
 
 # Environment variables
 .env

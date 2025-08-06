@@ -2,10 +2,10 @@
   "name": "git-worktree-mcp",
   "version": "1.0.0",
   "description": "MCP server for managing git worktrees through AI assistants",
-  "main": "src/index.ts",
+  "main": "dist/index.js",
   "type": "module",
   "bin": {
-    "git-worktree-mcp": "src/index.ts"
+    "git-worktree-mcp": "dist/index.js"
   },
   "repository": {
     "type": "git",
@@ -16,10 +16,12 @@
   },
   "homepage": "https://github.com/Mandalorian007/git-worktree-mcp#readme",
   "scripts": {
-    "start": "tsx src/index.ts",
+    "build": "tsc && chmod +x dist/index.js",
+    "start": "node dist/index.js",
     "dev": "tsx src/index.ts",
     "typecheck": "tsc --noEmit",
-    "test": "vitest run"
+    "test": "vitest run",
+    "prepublishOnly": "npm run build"
   },
   "keywords": [
     "mcp",
@@ -46,7 +48,7 @@
     "node": ">=18"
   },
   "files": [
-    "src/**/*",
+    "dist/**/*",
     "README.md"
   ]
 }

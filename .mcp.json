@@ -1,5 +1,9 @@
 {
   "mcpServers": {
+    "git-worktree": {
+      "command": "npx",
+      "args": ["github:Mandalorian007/git-worktree-mcp"]
+    },
     "playwright": {
       "command": "npx",
       "args": ["@playwright/mcp@latest"],
